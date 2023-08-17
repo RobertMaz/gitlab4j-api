@@ -81,6 +81,7 @@ public class Project {
     private String sshUrlToRepo;
     private Integer starCount;
     private List<String> tagList;
+    private List<String> topics;
     private Integer visibilityLevel;
     private Visibility visibility;
     private Boolean wallEnabled;
@@ -888,5 +889,13 @@ public class Project {
     public Project withSquashOption(SquashOption squashOption) {
         this.squashOption = squashOption;
         return this;
+    }
+
+    public List<String> getTopics() {
+        return topics;
+    }
+
+    public void setTopics(List<String> topic) {
+        this.topics = topic;
     }
 }
